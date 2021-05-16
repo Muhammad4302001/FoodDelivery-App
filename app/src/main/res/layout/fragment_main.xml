@@ -11,7 +11,9 @@
         android:id="@+id/serchview"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:scaleType="centerInside"
         android:src="@drawable/ic_baseline_search_24"
+        android:background="@drawable/background"
         android:layout_alignParentRight="true"/>
 
     <androidx.recyclerview.widget.RecyclerView
