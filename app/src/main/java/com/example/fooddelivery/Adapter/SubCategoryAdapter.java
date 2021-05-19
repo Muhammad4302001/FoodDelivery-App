@@ -54,7 +54,13 @@ public class SubCategoryAdapter extends RecyclerView.Adapter<SubCategoryAdapter.
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.product_food, parent, false);
         SubCategoryView subCategoryView = new SubCategoryView(view);
-        subCategoryView.linearLayout.setAnimation(AnimationUtils.loadAnimation(parent.getContext(),R.anim.animatio_item));
+
+        subCategoryView.linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
 
         return subCategoryView;
     }

@@ -140,22 +140,23 @@ public class CategotyAdapter extends RecyclerView.Adapter<CategotyAdapter.Catego
         });
 
 
-        if (select) {
-            if (position == 0) {
-                holder.cardView.setBackgroundResource(R.drawable.static_background_selected);
+//        if (select) {
+//            if (position == 0) {
+//                holder.cardView.setBackgroundResource(R.drawable.static_background_selected);
+//
+//                select = false;
+//            } else {
+                if (row_index == position) {
+                    holder.cardView.setBackgroundResource(R.drawable.static_background_selected);
+                } else {
+                    holder.cardView.setBackgroundResource(R.drawable.static_background_unselected);
+                }
+//            }
 
-                select = false;
-            } else {
-            }
 
-            if (row_index == position) {
-                holder.cardView.setBackgroundResource(R.drawable.static_background_selected);
-            } else {
-                holder.cardView.setBackgroundResource(R.drawable.static_background_unselected);
-            }
         }
 
-    }
+//    }
 
     @Override
     public int getItemCount() {

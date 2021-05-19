@@ -4,42 +4,41 @@
     android:id="@+id/productLayout"
     android:layout_width="115dp"
     android:layout_height="200dp"
-    android:orientation="vertical"
-    android:background="?attr/selectableItemBackground">
+    android:layout_margin="8dp"
+    android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="25dp">
+            android:orientation="vertical">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/imageCategory"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="115dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"></ImageView>
 
-                <ImageView
-                    android:id="@+id/imageCategory"
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:background="@drawable/background"
-                    android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_launcher"></ImageView>
-
-            </LinearLayout>
+        </LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
-        <TextView
-            android:id="@+id/textBigCateg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:gravity="center"
-            android:text="Turkish"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textBigCateg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:text="Turkish"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>
